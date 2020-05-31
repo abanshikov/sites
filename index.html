@@ -2,14 +2,166 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>links</title>
+	<title>sites</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #2e2e2e;
+		}
+		.nav {
+			padding: 1em;
+			height: 100vh;
+			background: #2980b9;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+			-ms-flex-pack: distribute;
+					justify-content: space-around;
+			-webkit-box-align: start;
+					-ms-flex-align: start;
+							align-items: start;
+			color: #ecf0f1;
+			text-decoration: none;
+			font-size: 16px;
+		}
+
+		.nav h3 {
+			font-size: 1.5em;
+			padding-bottom: 20px;
+		}
+
+		.nav a {
+			color: #ecf0f1;
+			text-decoration: none;
+			font-size: 1.2em;
+			line-height: 1.5em;
+		}
+
+		.underline {
+			text-decoration: none;
+			position: relative;
+		}
+
+		.underline::before {
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: -0.125em;
+			width: 0;
+			height: 0.0625em;
+			background-color: #ecf0f1;
+			-webkit-transition: all 0.35s ease;
+			transition: all 0.35s ease;
+		}
+
+		.underline:hover:before {
+			left: 0;
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
-	<a href="/_sites/_ready/maestrodent">Маэстродент</a>
-	<br>
-	<a href="/sites/sites/ready/fashion">fashion</a>
-	<br>
 	<a href="/sites/example">example</a>
+
+	<nav class="nav">
+			<div>
+				<h3>Примеры сайтов</h3>
+				<ol>
+					<li>
+						<a target="_blank"	href="/sites/sites/ready/aplata" class="underline">
+							A-PLATA Бесконтактная оплата банковскими картами “под ключ”
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/co2" class="underline">
+							CO2 This Website is tottaly CO2 neutral
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/creativeagency" class="underline">
+							creative agency
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/fashion" class="underline">
+							fashion
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/fotik" class="underline">
+							fotik
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/gofrocarton" class="underline">
+							gofrocarton
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/honeymoon" class="underline">
+							honeymoon
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/maestrodent" class="underline">
+							maestrodent
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/magsafe" class="underline">
+							magsafe
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/mattresses" class="underline">
+							mattresses
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/nabulvare" class="underline">
+							nabulvare
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/portfolio" class="underline">
+							portfolio
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/printers" class="underline">
+							printers
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/sites/ready/realflametver" class="underline">
+							realflametver
+						</a><br />
+					</li>
+					
+				</ol>
+			</div>
+
+			<div>
+				<h3>Примеры писем</h3>
+				<ol>
+					<li>
+						<a target="_blank" href="/sites/mails/letteraltay" class="underline">
+							letteraltay
+						</a><br />
+					</li>
+					<li>
+						<a target="_blank" href="/sites/mails/mailn2a" class="underline">
+							mailn2a
+						</a><br />
+					</li>
+				</ol>
+			</div>
+		</nav>
 	
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!-- верхняя часть страницы + header -->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Описание под найденным в поисковике -->
+        <meta name="description" content="">
+
+        <!-- Поддержка IE -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Поведение на малых экранах -->
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+        <!-- Иконка страницы -->
+        <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
+
+        <title>Заголовок</title>
+    <link href="main.css" rel="stylesheet"></head>
+    <body>
+
+<header class="header">
+    <div class="header__wrapper wrapper">
+        <div class="container">
+
+            <!-- адаптивное меню -->
+<nav class="nav">
+    <div class="logo__img">
+        <img src="img/logo/logoheader.png" alt="image">
+    </div>
+
+    <ul class="nav__links new-move__1">
+        <li><a href="index.html" class="nav__link active" data-page="index">Главная</a></li>
+        <li><a href="scheme.html" class="nav__link" data-page="scheme">Схема работы</a></li>
+        <li><a href="developers.html" class="nav__link" data-page="developers">Разработчикам</a></li>
+        <li><a href="certificates.html" class="nav__link" data-page="certificates">Сертификаты</a></li>
+        <li><a href="contacts.html" class="nav__link" data-page="contacts">Контакты</a></li>
+    </ul>
+
+    <ul class="nav__phone old-move__1">
+        <li class="move__1">
+            <div class="img">
+                <img src="img/icons/phoneheader.png" alt="image">
+            </div>
+            <a href="tel:+88432072102">(843)207-21-02</a>
+        </li>
+    </ul>
+
+    <div class="nav__burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+    </div>
+</nav>
+
+
+        </div>
+    </div>
+</header>
+
+
+<!-- основные секции -->
+<section class="s4 scheme">
+    <div class="wrapper">
+        <div class="container">
+            <h3 class="title scheme__title">Схема работы</h3>
+            <div class="scheme__text">
+            <p>
+                На вашу точку продаж (вендинговый автомат, выезд с платной парковки и т.д.) устанавливается терминал APLATA (на базе одного из бюджетных mPOS). Он принимает данные с карты клиента и отправляет их по GPRS (с шифрованием SSL/TLS) на сервер препроцессинга. Передается минимум данных в сжатом виде, за счет этого, время ожидания результата транзакции составляет всего несколько секунд. Затем сервер препроцессинга уже по проводному каналу отправляет запрос в банк и возвращает результат на терминал.
+            </p>
+            <p>
+                После получения подтверждения успешной транзакции терминал выдает команду сопряженному оборудованию - выдать товар, открыть шлагбаум и т.д. Доступны интерфейсы: UART, MDB, I2C, SPI, “сухой контакт”.
+            </p>
+        </div>
+        <img src="img/schema11.jpg" class="scheme__image" alt="image">
+
+        </div>
+    </div>
+</section>
+
+
+<!-- нижняя часть страницы + footer -->
+<footer class="footer">
+    <div class="wrapper">
+        <div class="container">
+
+            <p class="footer__item footer__item_1">ООО "ПромБудущее"</p>
+            <a href="#" class="footer__item footer__item_2">Личный кабинет</a>
+            <a href="mailto:support@a-plata.ru" class="footer__item footer__item_3">
+                <img src="img/icons/mailfuter.png" alt="image">
+                support@a-plata.ru
+            </a>
+            <p class="footer__item footer__item_4">© A-plata™, 2020</p>
+
+        </div>
+    </div>
+</footer>
+
+<div class="button__up" id="button__up" title="Наверх"></div>
+
+    <script type="text/javascript" src="main.js"></script></body>
+</html>
+

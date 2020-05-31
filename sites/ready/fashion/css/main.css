@@ -183,7 +183,7 @@ body {
 }
 
 .header {
-  background-image: url(../img/_src/bg-main.png);
+  background-image: url(../img/src/bg-main.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -692,7 +692,7 @@ body {
 
 .play {
   height: 100vh;
-  background-image: url(../img/_src/bg-play.png);
+  background-image: url(../img/src/bg-play.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

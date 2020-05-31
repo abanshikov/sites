@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>Матрас.топ</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon" />
+		<link href="libs/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="css/basket.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!-- header -->
+			<header class="header">
+				<img src="./img/header/bg.png" alt="bg" class="header__bg" />
+
+				<div class="row">
+					<!-- left -->
+					<div class="col-xl-1"></div>
+					<!-- navigations -->
+					<nav class="navbar navbar-expand-xl justify-content-around col-xl-10">
+						<!-- Brand -->
+						<a class="navbar-brand" href="#">
+							<img src="./img/header/logo.png" alt="logo" class="logo" />
+						</a>
+
+						<!-- Toggler/collapsibe Button -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<!-- Navbar links -->
+						<div class="collapse navbar-collapse" id="collapsibleNavbar">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link underline" href="#">О магазине</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link underline" href="#">Скидки и акции</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link underline" href="#">Доставка и оплата</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link underline" href="#">Контакты</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link underline" href="#">Корзина</a>
+									<span>5</span>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<div class="row row-basket justify-content-center">
+				<main class="content col-sm-12 col-md-11 col-lg-10 col-xl-8">
+					<div class="cards">
+						<h2 class="title">корзина</h2>
+
+						<div class="item-basket">
+							<img src="./img/close.png" alt="close" class="close-btn" />
+							<img src="./img/mattress.png" alt="mattress" class="mattress" />
+							<div class="main">
+								<h3 class="title">матрас dreamline comfort massage s1000</h3>
+								<p class="size">Размер: 140 х 180см</p>
+							</div>
+							<div class="right">
+								<div class="quantity">
+									<label for="quantity1" class="form-label">кол-во:</label>
+									<input type="text" class="form-control" id="quantity1" placeholder="1" />
+								</div>
+								<p class="price">7 681 р</p>
+							</div>
+						</div>
+
+						<div class="item-basket">
+							<img src="./img/close.png" alt="close" class="close-btn" />
+							<img src="./img/mattress.png" alt="mattress" class="mattress" />
+							<div class="main">
+								<h3 class="title">набор чехлов для матраса double terry</h3>
+								<p class="size">Размер: 140 х 180см</p>
+							</div>
+							<div class="right">
+								<div class="quantity">
+									<label for="quantity2" class="form-label">кол-во:</label>
+									<input type="text" class="form-control" id="quantity2" placeholder="1" />
+								</div>
+								<p class="price">5 140 р</p>
+							</div>
+						</div>
+
+						<div class="total">
+							<p class="title">Итого:</p>
+							<p class="price">12 821 р</p>
+						</div>
+					</div>
+
+					<form class="form">
+						<h3 class="title">оформление заказа</h3>
+						<div class="wrapper">
+							<div class="left">
+								<div class="surname form-group row">
+									<label for="surname" class="form-label">Фамилия</label>
+									<input type="text" class="form-control" id="surname" placeholder="Иванов" />
+								</div>
+								<div class="name form-group row">
+									<label for="name" class="form-label">Имя</label>
+									<input type="text" class="form-control" id="name" placeholder="Иван" />
+								</div>
+								<div class="patronymic form-group row">
+									<label for="patronymic" class="form-label">Отчество</label>
+									<input type="text" class="form-control" id="patronymic" placeholder="Иванович" />
+								</div>
+								<div class="email form-group row">
+									<label for="email" class="form-label">Эл. почта</label>
+									<input type="email" class="form-control" id="email" placeholder="ivanov@gmail.com" />
+								</div>
+								<div class="phone form-group row">
+									<label for="phone" class="form-label">Телефон</label>
+									<input type="tel" class="form-control" id="phone" placeholder="+7" />
+								</div>
+								<div class="comments form-group row">
+									<label for="comments" class="form-label label-comments">Комментарии</label>
+									<textarea rows="5" class="form-control" id="comments" placeholder="Домофон не подключен"></textarea>
+								</div>
+							</div>
+
+							<div class="right">
+								<div class="delivery form-group row">
+									<label class="col-form-label form-label">Доставка</label>
+									<div class="wrapper-right wrapper-right-radio">
+										<div class="custom-control custom-radio custom-control-inline">
+											<input
+												type="radio"
+												id="deliveryRadio1"
+												name="deliveryRadio"
+												class="custom-control-input"
+												checked=""
+											/>
+											<label class="custom-control-label" for="deliveryRadio1">Курьером на дом</label>
+										</div>
+										<div class="custom-control custom-radio custom-control-inline">
+											<input type="radio" id="deliveryRadio2" name="deliveryRadio" class="custom-control-input" />
+											<label class="custom-control-label" for="deliveryRadio2">Самовывоз</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="city form-group row">
+									<label for="city" class="form-label">Город</label>
+									<div class="wrapper-right">
+										<input type="text" class="form-control" id="city" placeholder="Новосибирск" />
+									</div>
+								</div>
+
+								<div class="address form-group row">
+									<label for="address" class="form-label">Адрес доставки</label>
+									<div class="wrapper-right">
+										<input type="text" class="form-control" id="address" placeholder="ул. Ленина, д. 1, кв. 112" />
+									</div>
+								</div>
+
+								<div class="payment form-group row">
+									<label class="col-form-label form-label">Оплата</label>
+									<div class="wrapper-right wrapper-right-radio">
+										<div class="custom-control custom-radio custom-control-inline">
+											<input
+												type="radio"
+												id="paymentRadio1"
+												name="paymentRadio"
+												class="custom-control-input"
+												checked=""
+											/>
+											<label class="custom-control-label" for="paymentRadio1">Онлайн оплата</label>
+										</div>
+										<div class="custom-control custom-radio custom-control-inline">
+											<input type="radio" id="paymentRadio2" name="paymentRadio" class="custom-control-input" />
+											<label class="custom-control-label" for="paymentRadio2">Наличными</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="time form-group row">
+									<label class="col-form-label form-label">Время доставки</label>
+									<div class="dropdown wrapper-right">
+										<button
+											class="btn btn-light dropdown-toggle"
+											type="button"
+											id="dropdownMenuButton"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											05.11.2019 - с 9:00 до 12:00
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">08.11.2019 - с 12:00 до 15:00</a>
+											<a class="dropdown-item" href="#">12.11.2019 - с 15:00 до 18:00</a>
+											<a class="dropdown-item" href="#">18.11.2019 - с 18:00 до 21:00</a>
+										</div>
+									</div>
+								</div>
+
+								<button type="button" class="btn btn-primary btn-formalize">ОФОРМИТЬ ЗАКАЗ</button>
+							</div>
+						</div>
+					</form>
+				</main>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer">
+			<img src="./img/main/footer.png" alt="footer" />
+		</footer>
+
+		<!-- scripts -->
+		<script src="libs/jquery/dist/jquery.min.js"></script>
+		<script src="libs/popper/popper.min.js"></script>
+		<script src="libs/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

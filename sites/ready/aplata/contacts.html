@@ -1,0 +1,174 @@
+<!-- верхняя часть страницы + header -->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Описание под найденным в поисковике -->
+        <meta name="description" content="">
+
+        <!-- Поддержка IE -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Поведение на малых экранах -->
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+        <!-- Иконка страницы -->
+        <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
+
+        <title>Заголовок</title>
+    <link href="main.css" rel="stylesheet"></head>
+    <body>
+
+<header class="header">
+    <div class="header__wrapper wrapper">
+        <div class="container">
+
+            <!-- адаптивное меню -->
+<nav class="nav">
+    <div class="logo__img">
+        <img src="img/logo/logoheader.png" alt="image">
+    </div>
+
+    <ul class="nav__links new-move__1">
+        <li><a href="index.html" class="nav__link active" data-page="index">Главная</a></li>
+        <li><a href="scheme.html" class="nav__link" data-page="scheme">Схема работы</a></li>
+        <li><a href="developers.html" class="nav__link" data-page="developers">Разработчикам</a></li>
+        <li><a href="certificates.html" class="nav__link" data-page="certificates">Сертификаты</a></li>
+        <li><a href="contacts.html" class="nav__link" data-page="contacts">Контакты</a></li>
+    </ul>
+
+    <ul class="nav__phone old-move__1">
+        <li class="move__1">
+            <div class="img">
+                <img src="img/icons/phoneheader.png" alt="image">
+            </div>
+            <a href="tel:+88432072102">(843)207-21-02</a>
+        </li>
+    </ul>
+
+    <div class="nav__burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+    </div>
+</nav>
+
+
+        </div>
+    </div>
+</header>
+
+
+<!-- основные секции -->
+<div class="contacts">
+<section class="s7">
+    <div class="wrapper">
+        <div class="container">
+            <h3 class="title contacts__title">Контактная информация:</h3>
+            <div class="contacts__content">
+
+                <div class="contacts__card">
+                    <img src="img/icons/PB.png" class="contacts__img" alt="image">
+                    <p class="contacts__text">ООО "ПромБудущее"</p>
+                </div>
+
+                <div class="contacts__card">
+                    <img src="img/icons/phone.png" class="contacts__img" alt="image">
+                    <p class="contacts__text">(843) 207-21-02</p>
+                </div>
+
+                <div class="contacts__card">
+                    <img src="img/icons/Place.png" class="contacts__img" alt="image">
+                    <p class="contacts__text">420034, г.Казань, ул. 2-я Юго-Западная 7, оф.35
+                        </p>
+                </div>
+
+                <div class="contacts__card">
+                    <img src="img/icons/mail.png" class="contacts__img" alt="image">
+                    <p class="contacts__text">partners@aplata.ru - партнерам<br>sale@aplata.ru - отдел продаж<br>support@aplata.ru - тех. поддержка</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div>
+<section class="s3">
+    <div class="wrapper">
+        <div class="container">
+
+            <h3 class="title light">Обратная связь</h3>
+            <p class="subtitle">Пожалуйста, заполните эту форму для обратной связи.<br>	С радостью и благодарностью ждем ваших сообщений.</p>
+
+            <form class="form" action="#" method="post" enctype="multipart/form-data">
+
+
+    <!-- input text -->
+    <div class="form__item form__item_1">
+        <input autocomplete="off" type="text" name="username" id="form__username" class="form__input" data-placeholder="ФИО" tabindex="1" required>
+    </div>
+
+    <!-- input email -->
+    <div class="form__item form__item_2">
+        <input autocomplete="off" type="email" id="form__useremail" name="useremail" class="form__input email" data-placeholder="Электронная почта" tabindex="2" required>
+    </div>
+
+    <!-- input phone -->
+    <div class="form__item form__item_3">
+        <input autocomplete="off" type="tel" id="form__userphone" name="userphone" class="form__input phone" data-placeholder="Телефон" tabindex="3" required>
+    </div>
+
+    <!-- textarea -->
+    <div class="form__item form__item_4">
+        <textarea autocomplete="off" name="usermessage" id="form__usermessage" class="form__textarea" data-placeholder="Напишите ваш вопрос или комментарий" tabindex="4"></textarea>
+    </div>
+
+    <!-- buttons -->
+    <div class="form__item form__item_5">
+        <button type="submit" class="form__button button__main" tabindex="5">
+            Отправить сообщение
+        </button>
+    </div>
+
+    <div class="form__item form__item_6">
+        <div class="form__info">
+            <p>Нажимая кнопку «Отправить сообщение» вы принимаете </p>
+            <a href="#">"Соглашение об обработке персональных данных"</a>
+        </div>
+    </div>
+
+
+</form>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- нижняя часть страницы + footer -->
+<footer class="footer">
+    <div class="wrapper">
+        <div class="container">
+
+            <p class="footer__item footer__item_1">ООО "ПромБудущее"</p>
+            <a href="#" class="footer__item footer__item_2">Личный кабинет</a>
+            <a href="mailto:support@a-plata.ru" class="footer__item footer__item_3">
+                <img src="img/icons/mailfuter.png" alt="image">
+                support@a-plata.ru
+            </a>
+            <p class="footer__item footer__item_4">© A-plata™, 2020</p>
+
+        </div>
+    </div>
+</footer>
+
+</div>
+</div>
+<div class="button__up" id="button__up" title="Наверх"></div>
+
+    <script type="text/javascript" src="main.js"></script></body>
+</html>
+

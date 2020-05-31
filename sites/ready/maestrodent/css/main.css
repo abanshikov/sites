@@ -747,7 +747,7 @@ body {
   right: 0px;
   width: 66px;
   height: 66px;
-  background-image: url(../libs/fancybox/fancybox_sprite@2x.png);
+  background-image: url(../libs/fancybox/fancyboxsprite@2x.png);
 }
 
 .fancybox-skin {
@@ -1818,19 +1818,19 @@ body {
 }
 
 .s6 .s6_slider_left .slick-prev:before {
-  content: url("../img/s6/left_blue.png");
+  content: url("../img/s6/leftblue.png");
 }
 
 .s6 .s6_slider_left .slick-next:before {
-  content: url("../img/s6/right_blue.png");
+  content: url("../img/s6/rightblue.png");
 }
 
 .s6 .s6_slider_right .slick-prev:before {
-  content: url("../img/s6/left_purple.png");
+  content: url("../img/s6/leftpurple.png");
 }
 
 .s6 .s6_slider_right .slick-next:before {
-  content: url("../img/s6/right_purple.png");
+  content: url("../img/s6/rightpurple.png");
 }
 
 .s7 {
