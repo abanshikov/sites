@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>Маэстро дент</title>
+
+		<meta name="description" content="" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon" />
+		<link href="css/reset.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+		<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="header_wrapper_logo">
+					<a href="#" class="logo">
+						<img class="img-svg" src="./img/logo.svg" alt="logo" />
+					</a>
+
+					<div class="name">
+						<p>Медицинский Центр</p>
+						<h3>МАЭСТРО<span>•</span>ДЕНТ</h3>
+					</div>
+				</div>
+
+				<div class="info time-work">
+					<img class="img-svg" src="./img/clock.svg" alt="clock" />
+					<p>
+						Работаем <br />
+						круглосуточно
+					</p>
+				</div>
+
+				<a href="#modalform" class="modalbox button button-purple-blue" rel="nofollow">
+					<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+					<p>Записаться на приём</p>
+				</a>
+
+				<div class="info address">
+					<img class="img-svg" src="./img/map.svg" alt="map" />
+					<p>м. Митино, <br />Уваровский пер., 3</p>
+				</div>
+
+				<div class="phone">
+					<span>+7(495)</span>
+					<p>120-52-93</p>
+				</div>
+			</div>
+		</header>
+
+		<!-- modal -->
+		<div id="modalform">
+			<!-- hidden inline form -->
+			<div class="logo">
+				<img src="./img/logo-modalform.png" alt="logo" />
+			</div>
+			<h2>Запись на приём</h2>
+			<p>.........................</p>
+			<form id="f_contact" name="contact" action="#" method="post">
+				<div class="wrapper">
+					<div class="icon">
+						<div class="diamond">
+							<img class="img-svg" src="./img/icon-name.svg" alt="name" />
+						</div>
+					</div>
+					<input type="text" name="Имя" id="username" class="input-info" autocomplete="off" placeholder="Ваше имя" />
+				</div>
+
+				<div class="wrapper">
+					<div class="icon">
+						<div class="diamond">
+							<img class="img-svg" src="./img/icon-mail.svg" alt="mail" />
+						</div>
+					</div>
+					<input type="text" name="email" id="email" class="input-info" autocomplete="off" placeholder="E-mail" />
+				</div>
+
+				<div class="wrapper">
+					<div class="icon">
+						<div class="diamond">
+							<img class="img-svg" src="./img/icon-phone.svg" alt="mail" />
+						</div>
+					</div>
+					<input type="text" name="phone" id="phone" class="input-info" autocomplete="off" placeholder="Телефон" />
+				</div>
+
+				<div class="wrapper">
+					<div class="icon">
+						<div class="diamond">
+							<img class="img-svg" src="./img/icon-clock.svg" alt="mail" />
+						</div>
+					</div>
+					<input type="text" name="clock" id="clock" class="input-info" autocomplete="off" placeholder="Желаемые дата и время" />
+				</div>
+
+				<div class="wrapper">
+					<div class="icon">
+						<div class="diamond">
+							<img class="img-svg" src="./img/icon-comment.svg" alt="mail" />
+						</div>
+					</div>
+					<input type="text" name="comment" id="comment" class="input-info" autocomplete="off" placeholder="Комментарии" />
+				</div>
+
+				<div class="checkbox">
+					<input type="checkbox" onchange="javascript:toggleBilling()" id="agreement" name="agreement" checked>
+					<label for="agreement">
+					Нажимая на кнопку, вы подтверждаете свое
+					совершеннолетие, соглашаетесь на
+					обработку Персональных данных в
+					соответствии с Условиями.</label>
+				</div>
+
+				<input type="button" id="sendInfo" class="button button-purple-blue" value="Записаться на приём"/>
+			</form>
+		</div>
+
+		<!-- nav -->
+		<nav class="nav">
+			<ul class="topmenu">
+				<li class="topmenu-link topmenu-notactive">
+					<a href="#">
+						<img class="nav-img" src="./img/nav/md.png" alt="md" />
+						<p>о центре</p>
+					</a>
+					<ul class="submenu">
+						<li class="h3">О центре</li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Программы</a></li>
+						<li><a href="#">Преимущества</a></li>
+						<li><a href="#">Лицензии и сертификаты</a></li>
+						<li><a href="#">Отвызы пациентов</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Лечение в рассрочку</a></li>
+						<li><a href="#">Прайс-лист</a></li>
+						<li><a href="#">Публикации</a></li>
+						<li><a href="#">Наши работы</a></li>
+						<li><a href="#">Вопрос-ответ</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu-link topmenu-notactive">
+					<a href="#">
+						<img class="nav-img" src="./img/nav/team.png" alt="team" />
+						<p>команда</p>
+					</a>
+					<ul class="submenu">
+						<li class="h3">Команда</li>
+						<li><a href="#">Подзаголовок 1</a></li>
+						<li><a href="#">Подзаголовок 2</a></li>
+						<li><a href="#">Подзаголовок 3</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu-link topmenu-notactive">
+					<a href="#">
+						<img class="nav-img" src="./img/nav/dentist.png" alt="dentist" />
+						<p>стоматология</p>
+					</a>
+					<ul class="submenu">
+						<li class="h3">стоматология</li>
+						<li><a href="#">Пломбирование</a></li>
+						<li><a href="#">Виниры</a></li>
+						<li><a href="#">Протезирование</a></li>
+						<li><a href="#">Удаление</a></li>
+						<li><a href="#">Отбеливание</a></li>
+						<li><a href="#">Детская cтоматология</a></li>
+						<li><a href="#">Эндодонтия</a></li>
+						<li><a href="#">Имплантация</a></li>
+						<li><a href="#">Эстетическая cтоматология</a></li>
+						<li><a href="#">Зубосохраняющие операции</a></li>
+						<li><a href="#">Ортодонтия</a></li>
+						<li><a href="#">Пародонтология</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu-link topmenu-notactive">
+					<a href="#">
+						<img class="nav-img" src="./img/nav/cosmetic.png" alt="cosmetic" />
+						<p>косметология</p>
+					</a>
+					<ul class="submenu">
+						<li class="h3">косметология</li>
+						<li><a href="#">Эпиляция</a></li>
+						<li><a href="#">Омоложение, удаление пигмента</a></li>
+						<li><a href="#">Фотоомоложение</a></li>
+						<li><a href="#">Удаление сосудов на лице и теле</a></li>
+						<li><a href="#">Контурная пластика</a></li>
+						<li><a href="#">Биоревитализация</a></li>
+						<li><a href="#">Ботокс</a></li>
+						<li><a href="#">Нити</a></li>
+						<li><a href="#">Пилинги</a></li>
+						<li><a href="#">Плазмолифтинг</a></li>
+						<li><a href="#">Мезотерапия</a></li>
+						<li><a href="#">Чистка лица</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu-link topmenu-notactive">
+					<a href="#">
+						<img class="nav-img" src="./img/nav/analysis.png" alt="analysis" />
+						<p>анализы</p>
+					</a>
+					<ul class="submenu">
+						<li class="h3">анализы</li>
+						<li><a href="#">Гематологические исследования</a></li>
+						<li><a href="#">Биохимические исследования</a></li>
+						<li><a href="#">Гормональные исследования</a></li>
+						<li><a href="#">Иммунологические исследования</a></li>
+						<li><a href="#">Аллергологические исследования</a></li>
+						<li><a href="#">Маркеры аутоиммунных <br> заболеваний</a></li>
+						<li><a href="#">Онкомаркёры</a></li>
+						<li><a href="#">Микроэлементы</a></li>
+						<li><a href="#">Исследование структуры <br> почечного камня</a></li>
+						<li><a href="#">Диагностика инфекционных <br> заболеваний</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu-link topmenu-notactive">
+					<a href="#">
+						<img class="nav-img" src="./img/nav/price.png" alt="price" />
+						<p>цены</p>
+					</a>
+					<ul class="submenu">
+						<li class="h3">цены</li>
+						<li><a href="#">Подзаголовок 1</a></li>
+						<li><a href="#">Подзаголовок 2</a></li>
+						<li><a href="#">Подзаголовок 3</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu-link topmenu-notactive">
+					<a href="#">
+						<img class="nav-img" src="./img/nav/stock.png" alt="stock" />
+						<p>акции</p>
+					</a>
+					<ul class="submenu">
+						<li class="h3">акции</li>
+						<li><a href="#">Подзаголовок 1</a></li>
+						<li><a href="#">Подзаголовок 2</a></li>
+						<li><a href="#">Подзаголовок 3</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu-link topmenu-notactive">
+					<a href="#">
+						<img class="nav-img" src="./img/nav/articles.png" alt="articles" />
+						<p>статьи</p>
+					</a>
+					<ul class="submenu">
+						<li class="h3">статьи</li>
+						<li><a href="#">Подзаголовок 1</a></li>
+						<li><a href="#">Подзаголовок 2</a></li>
+						<li><a href="#">Подзаголовок 3</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu-link topmenu-notactive">
+					<a href="#">
+						<img class="nav-img" src="./img/nav/contacts.png" alt="contacts" />
+						<p>контакты</p>
+					</a>
+					<ul class="submenu">
+						<li class="h3">контакты</li>
+						<li><a href="#">Подзаголовок 1</a></li>
+						<li><a href="#">Подзаголовок 2</a></li>
+						<li><a href="#">Подзаголовок 3</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+
+		<!-- main -->
+		<main class="main">
+
+			<section class="s1">
+				<div class="s1-slider">
+					<div class="slide">
+						<img class="bg" src="./img/main/bg.png" alt="bg">
+						<div class="s1-wrapper">
+							<div class="left">
+								<div class="s1-top">
+									<p>Ультразвуковая чистка</p>
+									<p>Чистка «Air-Flow»</p>
+									<span>&</span>
+								</div>
+								<div class="center">
+									<p class="old">3600</p>
+									<p class="new">2500 <span>₽</span>	</p>
+								</div>
+								<div class="bottom">
+									<p>Акция проводится до 31 Декабря</p>
+								</div>
+							</div>
+							<div class="center">
+								<div class="s1-top">
+									<img src="./img/main/Dürr_Dental_logo.png" alt="Dürr_Dental">
+									<img src="./img/main/nsk.png" alt="nsk">
+								</div>
+								<div class="center">
+									<a href="#" class="button button-transparent-purple">
+										<p>Подробнее</p>
+										<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+									</a>
+								</div>
+							</div>
+							<img class="right" src="./img/main/model.png" alt="model">
+						</div>
+					</div>
+
+					<div class="slide">
+						<img class="bg" src="./img/main/bg-1.png" alt="bg">
+						<div class="s1-wrapper">
+							<div class="left">
+								<div class="s1-top">
+									<p>Другая акция</p>
+									<p>акция</p>
+								</div>
+								<div class="center">
+									<p class="old">5000</p>
+									<p class="new">4000 <span>₽</span>	</p>
+								</div>
+								<div class="bottom">
+									<p>Акция проводится до 31 Декабря</p>
+								</div>
+							</div>
+							<div class="center">
+								<div class="s1-top">
+									<img src="./img/main/Dürr_Dental_logo.png" alt="Dürr_Dental">
+									<img src="./img/main/nsk.png" alt="nsk">
+								</div>
+								<div class="center">
+									<a href="#" class="button button-transparent-purple">
+										<p>Подробнее</p>
+										<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+									</a>
+								</div>
+							</div>
+							<img class="right" src="./img/main/model-1.png" alt="model">
+						</div>
+					</div>
+
+					<div class="slide">
+						<img class="bg" src="./img/main/bg-2.png" alt="bg">
+						<div class="s1-wrapper">
+							<div class="left">
+								<div class="s1-top">
+									<p>Следующая акция</p>
+									<p>описание</p>
+								</div>
+								<div class="center">
+									<p class="old">2500</p>
+									<p class="new">1999 <span>₽</span>	</p>
+								</div>
+								<div class="bottom">
+									<p>Акция проводится до 31 Декабря</p>
+								</div>
+							</div>
+							<div class="center">
+								<div class="s1-top">
+									<img src="./img/main/Dürr_Dental_logo.png" alt="Dürr_Dental">
+									<img src="./img/main/nsk.png" alt="nsk">
+								</div>
+								<div class="center">
+									<a href="#" class="button button-transparent-purple">
+										<p>Подробнее</p>
+										<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+									</a>
+								</div>
+							</div>
+							<img class="right" src="./img/main/model-2.png" alt="model">
+						</div>
+					</div>
+
+					<div class="slide">
+						<img class="bg" src="./img/main/bg-3.png" alt="bg">
+						<div class="s1-wrapper">
+							<div class="left">
+								<div class="s1-top">
+									<p>Итоговая акция</p>
+									<p>описание</p>
+								</div>
+								<div class="center">
+									<p class="old">7800</p>
+									<p class="new">5490 <span>₽</span>	</p>
+								</div>
+								<div class="bottom">
+									<p>Акция проводится до 31 Декабря</p>
+								</div>
+							</div>
+							<div class="center">
+								<div class="s1-top">
+									<img src="./img/main/Dürr_Dental_logo.png" alt="Dürr_Dental">
+									<img src="./img/main/nsk.png" alt="nsk">
+								</div>
+								<div class="center">
+									<a href="#" class="button button-transparent-purple">
+										<p>Подробнее</p>
+										<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+									</a>
+								</div>
+							</div>
+							<img class="right" src="./img/main/model-3.png" alt="model">
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="s2 advantages">
+
+				<div class="card">
+					<img class="bg" src="./img/s2/bg-1.png" alt="bg">
+					<img class="icon" src="./img/s2/icon-1.png" alt="icon">
+					<div class="text">
+						<p>Работаем круглосуточно</p>
+						<p>Без выходных</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<img class="bg" src="./img/s2/bg-2.png" alt="bg">
+					<img class="icon" src="./img/s2/icon-2.png" alt="icon">
+					<div class="text">
+						<p>Удобное расположение</p>
+						<p>(Митино и Красногорск)</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<img class="bg" src="./img/s2/bg-3.png" alt="bg">
+					<img class="icon" src="./img/s2/icon-3.png" alt="icon">
+					<div class="text">
+						<p>Конкурентные</p>
+						<p>цены</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<img class="bg" src="./img/s2/bg-4.png" alt="bg">
+					<img class="icon" src="./img/s2/icon-4.png" alt="icon">
+					<div class="text">
+						<p>Заботимся о Вашем Здоровье</p>
+						<p>боллее 15 лет</p>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="s3 services">
+				<div class="s3_left">
+					<div class="s3_left_head">
+						<h3>стоматология</h3>
+						<div>
+							<img src="./img/s3/icon-head-1.png" alt="icon">
+						</div>
+					</div>
+					<div class="s3_left_main s3_main">
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-1.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Пломбирование</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-2.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Эндодонтия</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-3.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Виниры</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-4.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Имплантация</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-5.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Протезирование</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-6.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Эстетическая стоматология</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-7.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Удаление</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-8.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Зубосохраняющие операции</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-9.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Отбеливание</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-10.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Ортодонтия</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-11.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Детская стоматология</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_left_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-blue.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-12.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Пародонтология</p>
+							</div>
+						</a>
+
+					</div>
+					<div class="s3_left_foot s3_foot">
+						<a href="#" class="button button-no-border-blue">
+							<p>Все услуги по Стоматологии</p>
+							<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+						</a>
+					</div>
+				</div>
+
+				<div class="s3_right">
+					<div class="s3_right_head">
+						<div>
+							<img src="./img/s3/icon-head-2.png" alt="icon">
+						</div>
+						<h3>косметология</h3>
+					</div>
+					<div class="s3_right_main s3_main">
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-21.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Ботокс</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-22.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Пилинги</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-23.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Плазмолифтинг</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-24.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Чистка лица</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-25.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Мезотерапия</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-26.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Фотоомоложение</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-27.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Лазерная эпиляция</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-28.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Удаление пигмента</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-29.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Контурная пластика</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-30.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Уходы</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-31.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Омолаживающая маска</p>
+							</div>
+						</a>
+
+						<a href="#" class="s3_right_main_item s3_main_item">
+							<div class="icon">
+								<img class="bg" src="./img/s3/bg-purple.png" alt="bg">
+								<img class="icon_img" src="./img/s3/icon-32.png" alt="icon">
+							</div>
+							<div class="text">
+								<p>Биоревитализация</p>
+							</div>
+						</a>
+
+					</div>
+					<div class="s3_right_foot s3_foot">
+						<a href="#" class="button button-no-border-purple">
+							<p>Все услуги по Косметологии</p>
+							<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="s4 analyses">
+				<h3>Анализы</h3>
+				<img src="./img/s4/line.png" alt="line">
+				<div class="wrapper">
+
+					<div class="left">
+						<ul>
+							<li class="bg_s4"></li>
+							<li class="li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Гематологические исследования</p></li>
+							<li class="li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Биохимические исследования</p></li>
+							<li class="li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Гормональные исследования</p></li>
+							<li class="li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Иммунологические исследования</p></li>
+							<li class="li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Аллергологические исследования</p></li>
+							<li class="li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Маркеры аутоиммунных заболеваний</p></li>
+							<li class="li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Онкомаркёры</p></li>
+							<li class="hide_s4 hide li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Микроэлементы</p></li>
+							<li class="hide_s4 hide li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Исследование структуры почечного камня</p></li>
+							<li class="hide_s4 hide li"><img class="img-svg" src="./img/arrow.svg" alt="arrow" /><p>Диагностика инфекционных заболеваний</p></li>
+							<li class="btn_s4 btn_text li"><a href="">Все виды Анализов</a></li>
+							<li class="btn_s4 btn_icon li">
+								<div>
+									<img class="img-svg img_svg_s4" src="./img/arrow.svg" alt="arrow" />
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="right">
+						<p class="head">Вы можете сдать Анализов в Центре Также к Вашим Услугам</p>
+						<a href="#" class="button button-transparent-purple">
+							<p>Анализы на дому</p>
+							<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+						</a>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="s5 about-clinic">
+				<div class="left">
+					<h3 class="title">О центре "Маэстродент"</h3>
+					<p class="text">
+						Красота зубов, восхитительная улыбка, правильный прикус – как все это поддерживать
+						в идеальном состоянии? Стоматология «МаэстроДент», работающая круглосуточно в
+						Митино, знает все ответы на эти вопросы! В нашей специализированной клинике
+						имеется современное оборудование, отвечающее всем необходимым требованиям качества
+						и безопасности. Кроме того, мы гордимся квалифицированным штатом сотрудников. Каждый
+						из врачей является профессионалом своего дела, имеет за плечами колоссальный опыт работы
+						и регулярно проходит обучение, совершенствуя свои навыки в лучших мировых институтах США,
+						Израиля, Германии и других странах. Клиенты, обратившись к нам единожды, возвращаются к
+						нам снова и снова, ведь результат от проведенных процедур приятно впечатляет своим эффектом.
+						Особое внимание стоматологическая клиника «MaestroDent» уделяет диагностике заболеваний,
+						выявляя сущность болезни и состояние пациента.
+					</p>
+					<div class="wrapper">
+						<div class="item">
+							<img src="./img/s5/icon-1.png" alt="icon">
+							<p>Парковка</p>
+						</div>
+						<div class="item">
+							<img src="./img/s5/icon-2.png" alt="icon">
+							<p>Телевидение</p>
+						</div>
+						<div class="item">
+							<img src="./img/s5/icon-3.png" alt="icon">
+							<p>Пресса</p>
+						</div>
+						<div class="item">
+							<img src="./img/s5/icon-4.png" alt="icon">
+							<p>Wi-Fi</p>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<img src="./img/s5/tooth.png" alt="tooth">
+				</div>
+			</section>
+
+			<section class="s6 prise">
+				<div class="left">
+					<h4 class="title">стоматология</h4>
+					<p class="text">стоимость услуг</p>
+
+					<div class="s6_slider_left">
+						<div class="wrapper">
+							<img class="icon" src="./img/s6/icon-1.png" alt="icon">
+							<p class="name">Имплантация зубов</p>
+							<p class="price">от 15 600<span>₽</span></p>
+							<a href="#" class="button button-transparent-white-blue">
+								<p>Полный Прайс-Лист</p>
+								<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+							</a>
+						</div>
+						<div class="wrapper">
+							<img class="icon" src="./img/s6/icon-2.png" alt="icon">
+							<p class="name">Эндодонтия</p>
+							<p class="price">от 12 200<span>₽</span></p>
+							<a href="#" class="button button-transparent-white-blue">
+								<p>Полный Прайс-Лист</p>
+								<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+							</a>
+						</div>
+						<div class="wrapper">
+							<img class="icon" src="./img/s6/icon-3.png" alt="icon">
+							<p class="name">Пломбирование</p>
+							<p class="price">от 8 000<span>₽</span></p>
+							<a href="#" class="button button-transparent-white-blue">
+								<p>Полный Прайс-Лист</p>
+								<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="right">
+					<h4 class="title">косметология</h4>
+					<p class="text">стоимость услуг</p>
+
+					<div class="s6_slider_right">
+						<div class="wrapper">
+							<img class="icon" src="./img/s6/icon-11.png" alt="icon">
+							<p class="name">Инъекции Ботокса</p>
+							<p class="price">от 15 600<span>₽</span></p>
+							<a href="#" class="button button-transparent-white-purple">
+								<p>Полный Прайс-Лист</p>
+								<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+							</a>
+						</div>
+
+						<div class="wrapper">
+							<img class="icon" src="./img/s6/icon-12.png" alt="icon">
+							<p class="name">Пилинги</p>
+							<p class="price">от 11 900<span>₽</span></p>
+							<a href="#" class="button button-transparent-white-purple">
+								<p>Полный Прайс-Лист</p>
+								<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+							</a>
+						</div>
+
+						<div class="wrapper">
+							<img class="icon" src="./img/s6/icon-13.png" alt="icon">
+							<p class="name">Плазмолифтинг</p>
+							<p class="price">от 5 900<span>₽</span></p>
+							<a href="#" class="button button-transparent-white-purple">
+								<p>Полный Прайс-Лист</p>
+								<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<section class="s7 form-of-record">
+				<div class="left">
+					<h3 class="title">записаться на приём</h3>
+					<img class="pc" src="./img/s7/pc.png" alt="pc">
+				</div>
+
+				<div class="right">
+					<form id="f_record_reception" class="form" name="record" action="#" method="post">
+
+						<div class="wrapper">
+							<div class="icon">
+								<div class="diamond">
+									<img class="img-svg" src="./img/icon-name.svg" alt="name" />
+								</div>
+							</div>
+							<input type="text" name="Имя" id="record_username" class="input-info_reception" autocomplete="off" placeholder="Ваше имя" />
+						</div>
+
+						<div class="wrapper">
+							<div class="icon">
+								<div class="diamond">
+									<img class="img-svg" src="./img/icon-clock.svg" alt="mail" />
+								</div>
+							</div>
+							<input type="text" name="clock" id="record_clock" class="input-info_reception" autocomplete="off" placeholder="Желаемые дата и время" />
+						</div>
+
+						<div class="wrapper">
+							<div class="icon">
+								<div class="diamond">
+									<img class="img-svg" src="./img/icon-mail.svg" alt="mail" />
+								</div>
+							</div>
+							<input type="text" name="email" id="record_email" class="input-info_reception" autocomplete="off" placeholder="E-mail" />
+						</div>
+
+						<div class="wrapper">
+							<div class="icon">
+								<div class="diamond">
+									<img class="img-svg" src="./img/icon-phone.svg" alt="mail" />
+								</div>
+							</div>
+							<input type="text" name="phone" id="record_phone" class="input-info_reception" autocomplete="off" placeholder="Телефон" />
+						</div>
+
+						<div class="wrapper">
+							<div class="icon">
+								<div class="diamond">
+									<img class="img-svg" src="./img/icon-comment.svg" alt="mail" />
+								</div>
+							</div>
+							<input type="text" name="comment" id="record_comment" class="input-info_reception" autocomplete="off" placeholder="Комментарии" />
+						</div>
+
+						<a href="#" class="button button-white-blue">
+							<p>Записаться на приём</p>
+							<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+						</a>
+					</form>
+				</div>
+			</section>
+
+			<section class="s8 doctors">
+				<div class="head">
+					<div class="left">
+						<h3 class="title">Доктора клиники</h3>
+						<div class="s8_arrow-left s8_arrow">
+							<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+						</div>
+						<div class="s8_arrow-right s8_arrow">
+							<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+						</div>
+					</div>
+					<a href="#" class="button button-gray-gray">
+						<p>Все Доктора Клиники</p>
+						<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+					</a>
+				</div>
+
+				<div class="s8_main">
+					<div class="s8_slider">
+
+						<div class="item">
+							<div class="wrapper">
+								<h4>Лоран Сергеевич Хананаев</h4>
+								<p>Стоматолог-терапевт, хирург</p>
+								<img src="./img/s8/doctor-1.png" alt="doctor">
+							</div>
+							<div class="foot">
+								<div class="arrow-down s8_arrow">
+									<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+								</div>
+								<a href="#">Записаться на приём</a>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="wrapper">
+								<h4>Таля Коган</h4>
+								<p>Стоматолог-терапевт</p>
+								<img src="./img/s8/doctor-2.png" alt="doctor">
+							</div>
+							<div class="foot">
+								<div class="arrow-down s8_arrow">
+									<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+								</div>
+								<a href="#">Записаться на приём</a>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="wrapper">
+								<h4>Тазин Денис Николаевич</h4>
+								<p>Стоматолог-хирург</p>
+								<img src="./img/s8/doctor-3.png" alt="doctor">
+							</div>
+							<div class="foot">
+								<div class="arrow-down s8_arrow">
+									<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+								</div>
+								<a href="#">Записаться на приём</a>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="wrapper">
+								<h4>Митрохина Ирина Николаевна</h4>
+								<p>Стоматолог-терапевт</p>
+								<img src="./img/s8/doctor-4.png" alt="doctor">
+							</div>
+							<div class="foot">
+								<div class="arrow-down s8_arrow">
+									<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+								</div>
+								<a href="#">Записаться на приём</a>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="wrapper">
+								<h4>Таля Коган</h4>
+								<p>Стоматолог-терапевт</p>
+								<img src="./img/s8/doctor-2.png" alt="doctor">
+							</div>
+							<div class="foot">
+								<div class="arrow-down s8_arrow">
+									<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+								</div>
+								<a href="#">Записаться на приём</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="s9 feedback">
+
+				<div class="left">
+					<div class="s9_arrow-left s9_arrow">
+						<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+					</div>
+
+					<div class="s9_slider">
+
+						<div class="item">
+							<p class="text">
+								Хочу выразить огромную благодарность за внимательное отношение врачу, мед. сестре,
+								администратору. В наше время очень редко встретишь такой внимательный и заботливый коллектив. <br>
+								Огромное Спасибо и Всем Вам Доброго Здоровья!
+							</p>
+							<div class="line"></div>
+							<div class="foot">
+								<img src="./img/s9/woman.png" alt="icon">
+								<p>Воронкова Е. В.</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<p class="text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore quod dicta
+								quisquam facere quas necessitatibus repellendus itaque eligendi magnam sint suscipit
+								laboriosam dolorem reprehenderit sed illo, modi beatae! Unde.
+							</p>
+							<div class="line"></div>
+							<div class="foot">
+								<img src="./img/s9/man.png" alt="icon">
+								<p>Иванов В.В.</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<p class="text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore quod dicta
+								quisquam facere quas necessitatibus repellendus.
+							</p>
+							<div class="line"></div>
+							<div class="foot">
+								<img src="./img/s9/woman.png" alt="icon">
+								<p>Петрова П.П.</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<p class="text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							</p>
+							<div class="line"></div>
+							<div class="foot">
+								<img src="./img/s9/man.png" alt="icon">
+								<p>Орлов Н.Н.</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<p class="text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit inventore quod dicta
+								quisquam facere quas necessitatibus repellendus itaque eligendi magnam sint suscipit
+								laboriosam dolorem reprehenderit sed illo, modi beatae!
+							</p>
+							<div class="line"></div>
+							<div class="foot">
+								<img src="./img/s9/woman.png" alt="icon">
+								<p>Астахова В.В.</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="s9_arrow-right s9_arrow">
+						<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+					</div>
+				</div>
+
+				<div class="right">
+					<h4 class="title">отзывы посетителей</h4>
+					<ul class="date">
+						<li class="toggle-slick active" data-slide="0"><p>12 Октября 2019</p><img class="img-svg" src="./img/cube.svg" alt="cube" /></li>
+						<li class="toggle-slick" data-slide="1"><p>14 Августа 2019</p><img class="img-svg" src="./img/cube.svg" alt="cube" /></li>
+						<li class="toggle-slick" data-slide="2"><p>23 Июля 2019</p><img class="img-svg" src="./img/cube.svg" alt="cube" /></li>
+						<li class="toggle-slick" data-slide="3"><p>09 Апреля 2019</p><img class="img-svg" src="./img/cube.svg" alt="cube" /></li>
+						<li class="toggle-slick" data-slide="4"><p>12 Февраля 2019</p><img class="img-svg" src="./img/cube.svg" alt="cube" /></li>
+					</ul>
+					<a href="#" class="button button-white-purple">
+						<p>Все Отзывы</p>
+						<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+					</a>
+				</div>
+
+			</section>
+
+			<section class="s10 publications">
+
+				<div class="item left">
+
+					<div class="sub-item">
+						<img class="bg" src="./img/s10/img-1.png" alt="img">
+						<div class="date"><p><span>23</span>октября</p></div>
+					</div>
+
+					<div class="sub-item">
+						<h4 class="title">Кариес зубов</h4>
+						<p class="text">Статистика неумолима — практически каждый второй житель России страдает кариесом. Ведь здоровье зубов — вещь довольно обманчивая. На первый взгляд зуб кажется здоровым, не болит, не </p>
+						<a href="#" class="button button-transparent-transparent">
+							<p>Читать подробнее</p>
+							<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+						</a>
+					</div>
+
+					<div class="sub-item link">
+						<p class="question"><span>Задать </span>Интересующий вопрос</p>
+						<img class="icon" src="./img/s10/icon-mail.png" alt="icon">
+					</div>
+
+				</div>
+
+				<div class="item center">
+
+					<div class="sub-item main_link">
+						<h3 class="main_title">Публикации</h3>
+						<p class="main_text">Полезная информация</p>
+						<img class="img-svg" src="./img/s10/icon-book.svg" alt="book" />
+					</div>
+
+					<div class="sub-item">
+						<img class="bg" src="./img/s10/img-2.png" alt="img">
+						<div class="date"><p><span>12</span>октября</p></div>
+					</div>
+
+					<div class="sub-item">
+						<h4 class="title">Какие импланты лучше ставить?</h4>
+						<p class="text">Как выбрать правильный зубной имплантат? Израильские или немецкие, швейцарские или отечественные… какие из них лучше и есть ли между ними разница на самом деле?</p>
+						<a href="#" class="button button-transparent-transparent">
+							<p>Читать подробнее</p>
+							<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+						</a>
+					</div>
+
+				</div>
+
+				<div class="item right">
+
+					<div class="sub-item">
+						<img class="bg" src="./img/s10/img-3.png" alt="img">
+						<div class="date"><p><span>7</span>октября</p></div>
+					</div>
+
+					<div class="sub-item">
+						<h4 class="title">Кариес зубов</h4>
+						<p class="text">Статистика неумолима — практически каждый второй житель России страдает кариесом. Ведь здоровье зубов — вещь довольно обманчивая. На первый взгляд зуб кажется здоровым, не болит, не </p>
+						<a href="#" class="button button-transparent-transparent">
+							<p>Читать подробнее</p>
+							<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+						</a>
+					</div>
+
+					<div class="sub-item link">
+						<p class="question"><span>Посмотреть </span>Все Публикации</p>
+						<img class="icon" src="./img/s10/icon-dots.png" alt="icon">
+					</div>
+
+				</div>
+
+			</section>
+
+			<section class="s11 lists">
+
+				<div class="item">
+					<div class="icon">
+						<img class="md" src="./img/s11/icon-1.png" alt="icon">
+					</div>
+					<ul class="list">
+						<li class="h3">О центре</li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Программы</a></li>
+						<li><a href="#">Преимущества</a></li>
+						<li><a href="#">Лицензии и сертификаты</a></li>
+						<li><a href="#">Отвызы пациентов</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Лечение в рассрочку</a></li>
+						<li><a href="#">Прайс-лист</a></li>
+						<li><a href="#">Публикации</a></li>
+						<li><a href="#">Наши работы</a></li>
+						<li><a href="#">Вопрос-ответ</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<div class="icon">
+						<img src="./img/s11/icon-2.png" alt="icon">
+					</div>
+					<ul class="list">
+						<li class="h3">стоматология</li>
+						<li><a href="#">Пломбирование</a></li>
+						<li><a href="#">Виниры</a></li>
+						<li><a href="#">Протезирование</a></li>
+						<li><a href="#">Удаление</a></li>
+						<li><a href="#">Отбеливание</a></li>
+						<li><a href="#">Детская cтоматология</a></li>
+						<li><a href="#">Эндодонтия</a></li>
+						<li><a href="#">Имплантация</a></li>
+						<li><a href="#">Эстетическая cтоматология</a></li>
+						<li><a href="#">Зубосохраняющие операции</a></li>
+						<li><a href="#">Ортодонтия</a></li>
+						<li><a href="#">Пародонтология</a></li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<div class="icon">
+						<img src="./img/s11/icon-3.png" alt="icon">
+					</div>
+					<ul class="list">
+						<li class="h3">косметология</li>
+						<li><a href="#">Эпиляция</a></li>
+						<li><a href="#">Омоложение, удаление пигмента</a></li>
+						<li><a href="#">Фотоомоложение</a></li>
+						<li><a href="#">Удаление сосудов на лице и теле</a></li>
+						<li><a href="#">Контурная пластика</a></li>
+						<li><a href="#">Биоревитализация</a></li>
+						<li><a href="#">Ботокс</a></li>
+						<li><a href="#">Нити</a></li>
+						<li><a href="#">Пилинги</a></li>
+						<li><a href="#">Плазмолифтинг</a></li>
+						<li><a href="#">Мезотерапия</a></li>
+						<li><a href="#">Чистка лица</a></li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<div class="icon">
+						<img src="./img/s11/icon-4.png" alt="icon">
+					</div>
+					<ul class="list">
+						<li class="h3">анализы</li>
+						<li><a href="#">Гематологические исследования</a></li>
+						<li><a href="#">Биохимические исследования</a></li>
+						<li><a href="#">Гормональные исследования</a></li>
+						<li><a href="#">Иммунологические исследования</a></li>
+						<li><a href="#">Аллергологические исследования</a></li>
+						<li><a href="#">Маркеры аутоиммунных <br> заболеваний</a></li>
+						<li><a href="#">Онкомаркёры</a></li>
+						<li><a href="#">Микроэлементы</a></li>
+						<li><a href="#">Исследование структуры <br> почечного камня</a></li>
+						<li><a href="#">Диагностика инфекционных <br> заболеваний</a></li>
+					</ul>
+				</div>
+
+			</section>
+
+			<!-- footer -->
+			<footer class="footer">
+				<div class="container">
+
+					<div class="left">
+						<a href="#" class="logo"><img class="img-svg" src="./img/logo.svg" alt="logo" /></a>
+						<div>
+							<p>© 2019 медицинский центр «Маэстро-Дент»</p>
+							<a class="link" href="#">Все права защищены</a>
+						</div>
+					</div>
+
+					<div class="center">
+						<div class="footer-top">
+							<a href="#" class="social"><img class="img-svg" src="./img/footer/instagram.svg" alt="logo" /></a>
+							<a href="#" class="social"><img class="img-svg" src="./img/footer/twitter.svg" alt="logo" /></a>
+							<a href="#" class="social"><img class="img-svg" src="./img/footer/vk.svg" alt="logo" /></a>
+							<a href="#" class="social f"><img class="img-svg" src="./img/footer/facebook.svg" alt="logo" /></a>
+						</div>
+						<div class="bottom">
+							<a href="#">Карта сайта</a>
+							<p>|</p>
+							<a href="#">Политика конфиденциальности</a>
+						</div>
+					</div>
+
+					<div class="right">
+						<a href="#" class="logo_right"><img class="img-svg" src="./img/footer/as.svg" alt="logo_right" /></a>
+						<a href="#" class="link">Создание сайта - </a>
+						<a href="#" class="name">AnySite</a>
+					</div>
+
+				</div>
+
+				<div class="foot-bottom">
+					<p>При цитировании или ином использовании материалов, опубликованных на страницах сайта  MaestroDent.ru ссылка на источник обязательна!</p>
+				</div>
+
+			</footer>
+
+		</main>
+
+		<div class="top" id="top" title="Наверх">
+			<div class="img-top">
+				<img class="img-svg" src="./img/arrow.svg" alt="arrow" />
+			</div>
+			<p class="text">Вверх</p>
+		</div>
+
+		<!-- scripts -->
+		<script src="libs/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
